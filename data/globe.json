@@ -1,0 +1,38 @@
+[
+  {
+    "order": 1,
+    "startLat": 20.5937,
+    "startLng": 78.9629,
+    "endLat": 37.0902,
+    "endLng": -95.7129,
+    "arcAlt": 0.35,
+    "color": "#38BDF8"
+  },
+  {
+    "order": 2,
+    "startLat": 20.5937,
+    "startLng": 78.9629,
+    "endLat": 56.1304,
+    "endLng": -106.3468,
+    "arcAlt": 0.32,
+    "color": "#22C55E"
+  },
+  {
+    "order": 3,
+    "startLat": 20.5937,
+    "startLng": 78.9629,
+    "endLat": 23.8859,
+    "endLng": 45.0792,
+    "arcAlt": 0.28,
+    "color": "#F97316"
+  },
+  {
+    "order": 4,
+    "startLat": 20.5937,
+    "startLng": 78.9629,
+    "endLat": 23.4241,
+    "endLng": 53.8478,
+    "arcAlt": 0.3,
+    "color": "#A855F7"
+  }
+]

@@ -120,6 +120,22 @@ export default function Section3() {
         },
     ]
 
+    let experience = [
+        {
+            number: "2+",
+            title: "Years of experience"
+        },
+        {
+            number: "20+",
+            title: "Projects Delivered to Production"
+        },
+        {
+            number: "15+",
+            title: "Clients Worked With"
+        },
+
+    ]
+
     let texts: string[] = [
         "Crafted with clean code and real-world intent.",
         "Design-first. Performance always.",
@@ -213,7 +229,16 @@ export default function Section3() {
                 </motion.div>
                 <div className='h-full w-52 bg-linear-to-r from-black to-transparent left-0  z-20 absolute'></div>
                 <div className='h-full w-52 bg-linear-to-l from-black to-transparent right-0  z-20 absolute'></div>
-
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                {experience.map((input,index) => {
+                    return (
+                        <div className='bg-linear-to-r from-sky-950/20 to-sky-800/10 border py-6 px-5 flex flex-col gap-2 justify-center border-sky-500/10 '>
+                            <h3 className='text-4xl text-gray-200 font-dm-sans text-left'>{input.number}</h3>
+                            <p className='text-sm text-gray-400 font-dm-sans text-left'>{input.title}</p>
+                        </div>
+                    )
+                })}
             </div>
 
         </div>

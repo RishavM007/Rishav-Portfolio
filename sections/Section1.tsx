@@ -5,10 +5,10 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { FaRegClock } from "react-icons/fa6";
 import Image from 'next/image'
 import { HiArrowRight } from "react-icons/hi2";
+import { Canvas } from '@react-three/fiber';
 import Link from 'next/link';
 
 export default function Section1() {
-
 
   function printDate() {
     const dateData: string[] = [
@@ -53,13 +53,13 @@ export default function Section1() {
 
 
   return (
-    <div className='border border-sky-500/10 bg-linear-to-tr flex flex-row gap-5  from-sky-950/20 via-sky-800/20 to-sky-700/10 p-4'>
-      <div className='w-[23%] relative '>
+    <div className='border border-sky-500/10 bg-linear-to-tr flex flex-row gap-5  from-sky-950/20 via-sky-800/20 to-sky-700/10 p-4 '>
+      <div className='w-[21%] relative '>
         <Image src={myimg} alt='Rishav Image' className='h-auto w-full'></Image>
         <div className='absolute top-0 h-full w-full bg-linear-to-b from-black/20 to-sky-900/80'></div>
       </div>
 
-      <div className='w-[77%] flex flex-col gap-4'>
+     <div className='w-[77%] flex flex-col gap-4 h-full'>
         <div className='bg-linear-to-tr border border-sky-500/10 from-sky-950/10 via-sky-800/20 to-sky-800/10 flex flex-row gap-4 p-3'>
 
           <div className='py-2 w-[25%] pr-5 bg-linear-to-tr from-sky-950/20 via-sky-800/10 to-sky-700/10 border border-sky-500/10 flex justify-center items-center flex-row gap-0'>
@@ -89,8 +89,8 @@ export default function Section1() {
             </Link>
           </div>
         </div>
-        <div className='flex flex-row gap-4 bg-transparent p-0'>
-          <div className='w-[70%] px-6 gap-2 flex flex-col py-10 h-full border border-sky-500/10 bg-linear-to-tr from-sky-950/20 via-sky-800/10 to-sky-700/10'>
+        <div className='flex flex-row gap-4 items-stretch bg-transparent p-0'>
+          <div className='w-[70%] px-6 gap-2 flex flex-col py-10 border border-sky-500/10 bg-linear-to-tr from-sky-950/20 via-sky-800/10 to-sky-700/10'>
             <h3 className='text-xs text-gray-300 tracking-wider font-dm-sans'>A WEB DEVELOPER</h3>
             <div className='flex flex-row items-center gap-0'>
               <h1 className='text-3xl font-quicksand text-white font-semibold'>
@@ -106,7 +106,9 @@ export default function Section1() {
 
             <p className='text-xs text-gray-200 font-dm-sans tracking-wide leading-loose'>I am a India-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience and industries.</p>
           </div>
-          <div className='w-[30%] h-full border border-sky-500/10  bg-linear-to-tr from-sky-950/20 via-sky-800/10 to-sky-700/10'></div>
+          <div className='w-[30%] h-[310px] border border-sky-500/10  bg-linear-to-tr from-sky-950/20 via-sky-800/10 to-sky-700/10'>
+
+          </div>
         </div>
       </div>
     </div>
